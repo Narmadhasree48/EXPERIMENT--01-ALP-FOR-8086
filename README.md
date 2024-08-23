@@ -90,9 +90,44 @@ mov bx,8945h;
 or  bx,ax;
 ret
 ~~~
+## OUTPUT
+![Screenshot 2024-08-19 140610](https://github.com/user-attachments/assets/05abbead-3f49-4067-b191-4973370357ec)
+## AND
+~~~
+org 100h
+mov ax,38h;
+mov bx,48h;
+ ax,bx;
+mov [si],ax;
+ret
+~~~
+## output
+![Screenshot 2024-08-19 142819](https://github.com/user-attachments/assets/dfd5421f-b3ec-4eb3-8ddf-711dfdb06476)
+## NOT
+~~~
+org 100h
+mov [si+4],ax;
+mov ax,44h;
+mov bx,58h;
+not ax;
+mov [si+6],ax;
+ret
+~~~
+## OUTPUT
+![Screenshot 2024-08-19 143121](https://github.com/user-attachments/assets/274b89a8-336f-45a2-9a63-f352a9963f41)
+## XOR
+~~~
+org 100h
+mov ax,38h;
+mov bx,48h;
+xor ax,bx;
+mov [si+2],ax;
+ret
+~~~
+## OUTPUT
+![Screenshot 2024-08-19 142633](https://github.com/user-attachments/assets/21b2cc3b-950c-4286-bb2b-45ebb57e9d6f)
 ## Result :
- 
-
+Thus, to write and execute ALP on fundamental arithmetic operations and logical operation is successful.
 
 
 
