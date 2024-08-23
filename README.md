@@ -31,70 +31,65 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 
 ![image](https://user-images.githubusercontent.com/36288975/189273263-d65baae9-4b8f-4723-afb3-c0ffa4052b04.png)
-
-
-
-
-
-
-
-
-
-
-
 9.	Click on emulate to start emulation 
-
-
-
-
-
-
-
-
 ![image](https://user-images.githubusercontent.com/36288975/189273273-9bb36ec1-e2e8-4892-8d35-37707332bfdc.png)
-
-
-
-
-
-
-
-
 10.	If no errors are found click on run the program and check the status of various flags in the flags tab as shown below 
-
-
-
-
-
-
 ![image](https://user-images.githubusercontent.com/36288975/189273277-113a2a33-4a40-4ff8-95a5-ecd3a1f504fe.png)
-
-
-
-
-
-
-
 ## Programs for arithmetic  operations
-
 ## Addition  of 8 bit ALP 
-
-
-
+~~~
+org 100H
+MOV AX,4454H;
+MOV BX,3322H;
+ADD AX,BX;
+MOV [3000H],AX;
+ret
+~~~
 ## Output  
- 
+ ![image](https://github.com/user-attachments/assets/fd4ac8e1-6bf9-437d-81cb-bd9a73651b42)
 ## Subtraction   of 8 bit numbers  ALP 
- 
-## Output  
+~~~
+org 100h
+MOV AX,3848H;
+MOV BX,7008H;
+SUB AX,BX;
+MOV [6000H],AX;
+ret
+~~~
+## Output 
+![Screenshot 2024-08-19 134121](https://github.com/user-attachments/assets/5b1a7cc3-c4df-4916-b524-febee4eac637)
 ## Multiplication alp 
+~~~
+org 100h
+MOV AX,48FFH;
+MOV BX,38EEH;
+MUL AX;
+MOV [7000H],AX;
+ret
+~~~
  ## Output  
-
-
+ ![Screenshot 2024-08-19 134525](https://github.com/user-attachments/assets/a69d9565-58cf-48fd-a60e-e5f610abe7ab)
 ## Division alp 
-
+~~~
+org 100h
+MOV AX,48FFH;
+MOV BX,38EEH;
+DIV AX;
+MOV [7000H],AX;
+ret
+~~~
 ## Output  
-
-
+![Screenshot 2024-08-23 084559](https://github.com/user-attachments/assets/5d7a47e7-e21c-4148-88b8-ac6e914c2fe5)
+## Programs for logical  operations
+## or
+~~~
+org 100h
+mov si,5000h;
+mov ax,4585h;
+mov bx,8945h;
+or  bx,ax;
+ret
+~~~
 ## Result :
  
 
