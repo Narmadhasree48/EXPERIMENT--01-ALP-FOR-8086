@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+Name :NARMADHA SREE S
+Roll no :212223240105
+Date of experiment :23-08-2024
 
 
 
